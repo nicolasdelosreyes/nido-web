@@ -3,27 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nido S-Mart Living</title>
+    <title>Nido S-Mart Living | Hogar Inteligente</title>
     <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 80px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Arial', sans-serif;
             color: white;
+            background: #0a0f1c;
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(10,15,28,0.75), rgba(10,15,28,0.85)), 
+                        url('NidoLogo.jpeg') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            max-width: 900px;
+            padding: 20px;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 5.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 5px 25px rgba(0,0,0,0.9);
+            letter-spacing: 5px;
         }
-        p {
-            font-size: 1.3rem;
+        .subtitle {
+            font-size: 2.2rem;
+            color: #67e8f9;
+            margin-bottom: 25px;
+            letter-spacing: 3px;
+        }
+        .description {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+            opacity: 0.95;
+        }
+        .btn {
+            padding: 18px 50px;
+            font-size: 1.4rem;
+            background: #22d3ee;
+            color: #0a0f1c;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #67e8f9;
+            transform: scale(1.08);
         }
     </style>
 </head>
 <body>
-    <h1>🌳 Nido S-Mart Living</h1>
-    <p>Mi primer sitio web desplegado correctamente en Railway</p>
-    <p>¡Todo funciona! ✅</p>
+    <div class="hero">
+        <div class="content">
+            <h1>NIDO</h1>
+            <p class="subtitle">S-MART LIVING</p>
+            <p class="description">Tu hogar, inteligentemente protegido</p>
+            <button class="btn">Conocer Nuestras Soluciones</button>
+        </div>
+    </div>
 </body>
 </html>
